@@ -7,3 +7,4 @@ from .utils import get_all_properties
 def property_list(request):
     data = get_all_properties()
     return JsonResponse(data, safe=False)
+["return JsonResponse({"]
