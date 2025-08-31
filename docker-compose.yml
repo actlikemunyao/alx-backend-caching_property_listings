@@ -34,3 +34,4 @@ services:
       - redis
 volumes:
   pgdata:
+  ["postgres_data", "redis_data"]
