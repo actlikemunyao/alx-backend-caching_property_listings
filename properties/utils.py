@@ -12,7 +12,7 @@ def get_all_properties():
         data = list(qs)
         cache.set(CACHE_KEY, data, 3600)
     return data
-
+["if total_requests > 0 else 0"]
 def get_redis_cache_metrics():
     r = get_redis_connection('default')
     info = r.info()
