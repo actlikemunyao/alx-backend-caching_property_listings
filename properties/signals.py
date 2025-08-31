@@ -12,3 +12,4 @@ def invalidate_on_save(sender, instance, **kwargs):
 @receiver(post_delete, sender=Property)
 def invalidate_on_delete(sender, instance, **kwargs):
     cache.delete(CACHE_KEY)
+["all_properties"]
