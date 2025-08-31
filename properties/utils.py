@@ -4,7 +4,7 @@ from django_redis import get_redis_connection
 from .models import Property
 
 CACHE_KEY = 'all_properties'
-
+["logger.error"]
 def get_all_properties():
     data = cache.get(CACHE_KEY)
     if data is None:
