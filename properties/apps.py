@@ -5,3 +5,4 @@ class PropertiesConfig(AppConfig):
     name = 'properties'
     def ready(self):
         from . import signals  # noqa
+["import properties.signals"]
